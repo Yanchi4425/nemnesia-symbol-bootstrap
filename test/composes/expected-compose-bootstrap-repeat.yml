@@ -261,7 +261,7 @@ services:
     container_name: rest-gateway-0
     environment:
       npm_config_cache: /symbol-workdir
-    image: symbolplatform/symbol-rest:2.5.1
+    image: symbolplatform/symbol-rest:latest
     command: npm start --prefix /app /symbol-workdir/rest.json
     stop_signal: SIGINT
     working_dir: /symbol-workdir
@@ -280,7 +280,7 @@ services:
     container_name: rest-gateway-1
     environment:
       npm_config_cache: /symbol-workdir
-    image: symbolplatform/symbol-rest:2.5.1
+    image: symbolplatform/symbol-rest:latest
     command: npm start --prefix /app /symbol-workdir/rest.json
     stop_signal: SIGINT
     working_dir: /symbol-workdir
@@ -299,7 +299,7 @@ services:
     container_name: rest-gateway-2
     environment:
       npm_config_cache: /symbol-workdir
-    image: symbolplatform/symbol-rest:2.5.1
+    image: symbolplatform/symbol-rest:latest
     command: npm start --prefix /app /symbol-workdir/rest.json
     stop_signal: SIGINT
     working_dir: /symbol-workdir
@@ -318,7 +318,7 @@ services:
     container_name: rest-gateway-3
     environment:
       npm_config_cache: /symbol-workdir
-    image: symbolplatform/symbol-rest:2.5.1
+    image: symbolplatform/symbol-rest:latest
     command: npm start --prefix /app /symbol-workdir/rest.json
     stop_signal: SIGINT
     working_dir: /symbol-workdir
