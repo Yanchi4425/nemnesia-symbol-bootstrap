@@ -31,6 +31,8 @@ The health check process handles 'repeat' and custom 'openPort' services.
 
   static examples = [`$ symbol-bootstrap healthCheck`];
 
+  static aliases = ['hc'];
+
   static flags = {
     help: CommandUtils.helpFlag,
     target: CommandUtils.targetFlag,

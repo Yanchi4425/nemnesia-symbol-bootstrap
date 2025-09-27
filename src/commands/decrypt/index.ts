@@ -55,10 +55,12 @@ $ echo "$MY_ENV_VAR_PASSWORD" | symbol-bootstrap decrypt --source target/address
   static flags = {
     help: CommandUtils.helpFlag,
     source: Flags.string({
+      char: 's',
       description: `The source encrypted yml file to be decrypted.`,
       required: true,
     }),
     destination: Flags.string({
+      char: 'd',
       description: `The destination decrypted file to create. The destination file must not exist.`,
       required: true,
     }),

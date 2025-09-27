@@ -36,6 +36,7 @@ export default class Run extends Command {
 
     healthCheck: Flags.boolean({
       description: HealthCheck.description,
+      aliases: ['hc'],
     }),
 
     resetData: Flags.boolean({
