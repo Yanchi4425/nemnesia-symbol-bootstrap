@@ -44,10 +44,12 @@ $ symbol-bootstrap start --password 1234 --preset testnet --assembly dual --cust
   static flags = {
     help: CommandUtils.helpFlag,
     source: Flags.string({
+      char: 's',
       description: `The source plain yml file to be encrypted. If this file is encrypted, the command will raise an error.`,
       required: true,
     }),
     destination: Flags.string({
+      char: 'd',
       description: `The destination encrypted file to create. The destination file must not exist.`,
       required: true,
     }),
